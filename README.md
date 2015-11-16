@@ -12,6 +12,6 @@ Stamp is library for automating the email template workflow. By using Jade as a 
   * _gulp-livereload:_ automatically refresh the page after saving
 
 * **Jade** as an HTML compiler
-  * _global jade:_ contains tools and regions for templates - pages
+  * _global jade:_ contains tools and regions for templates down to pages
   * _template jade:_ contains layouts and variables for pages
   * _page jade:_ ability to override global & template variables & blocks
