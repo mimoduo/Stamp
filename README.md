@@ -26,6 +26,6 @@ Stamp is library for automating the email template workflow. By using Jade as a 
   * Press enter.
   * _The terminal will now operate within the Stamp folder_
 * Type in: npm install
-  * This will install all modules necessary for gulp to run
+  * This will install all the modules necessary for gulp to run
 * Type in: gulp
   * This will begin the automated workflow
