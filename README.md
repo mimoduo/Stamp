@@ -1,6 +1,6 @@
 #Stamp
 
-Stamp is library for automating the email template workflow using Jade and Gulp in unison. Jade provides layers of inheritance to ensure consistency and flexibility is maintained. Gulp provides a means to abstract previously inline styles into an external stylesheet.
+Stamp is library for automating the email template workflow using Jade and Gulp in unison. Jade provides a templating system. Gulp provides
 
 ##Features
 
@@ -19,7 +19,7 @@ Stamp is library for automating the email template workflow using Jade and Gulp 
 ##Installation
 
 * Make sure node is installed: https://nodejs.org/en/download/
-* Open up a terminal
+* Open up a terminal / command prompt
   * Type in: cd
   * Press the spacebar
   * Drag the folder "Stamp" into the terminal window
