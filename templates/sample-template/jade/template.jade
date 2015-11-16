@@ -1,0 +1,32 @@
+block page-variables
+
+include ../jade/template-variables.jade
+include ../../global-jade/mixins.jade
+
+doctype transitional
+html(xmlns="http://www.w3.org/1999/xhtml")
+  include ../../global-jade/head.jade
+  body
+    table.page(bgcolor="")
+      tr
+        td
+          table.compartment(align="center")
+            tr
+              td
+                block header
+                  p Header
+            tr
+              td
+                block hero
+                  +a('google.com')
+                    +img('hero.jpg', 'Hero Image')
+            tr
+              td
+                block content
+                  p Content
+            tr
+              td
+                block footer
+                  p Footer
+                  p Legal
+

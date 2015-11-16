@@ -1,0 +1,131 @@
+/* ================
+  Base
+================ */
+
+body {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+
+/* ================
+  Column Tools
+================ */
+
+.compartment {
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+.full {
+  display: block;
+  width: 100%;
+}
+
+
+/* ================
+  Space Tools
+================ */
+
+/* Padding */
+
+.pt1 {
+  padding-top: 10px;
+}
+
+.pt1 {
+  padding-top: 20px;
+}
+
+.pt1 {
+  padding-top: 30px;
+}
+
+.pt1 {
+  padding-top: 40px;
+}
+
+.pr1 {
+  padding-right: 10px;
+}
+
+.pr2 {
+  padding-right: 20px;
+}
+
+.pr3 {
+  padding-right: 30px;
+}
+
+.pr4 {
+  padding-right: 40px;
+}
+
+.pb1 {
+  padding-bottom: 10px;
+}
+
+.pb2 {
+  padding-bottom: 20px;
+}
+
+.pb3 {
+  padding-bottom: 30px;
+}
+
+.pb4 {
+  padding-bottom: 40px;
+}
+
+.pl1 {
+  padding-left: 10px;
+}
+
+.pl1 {
+  padding-left: 10px;
+}
+
+.pl2 {
+  padding-left: 20px;
+}
+
+.pl3 {
+  padding-left: 30px;
+}
+
+.pl4 {
+  padding-left: 40px;
+}
+
+
+/* ================
+  Images
+================ */
+
+/* Image Height Quirk */
+
+img.full {
+  height: auto;
+}
+
+/* Linked Images Quirk */
+
+a img {
+  border-style: none;
+  border-width: 0;
+}
+
+
+/* ================
+  Tables
+================ */
+
+table {
+  border-collapse: collapse;
+  word-wrap: break-word;
+  width: 100%;
+}

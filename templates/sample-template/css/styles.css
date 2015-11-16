@@ -1,0 +1,55 @@
+/* ================
+  Column Tools
+================ */
+
+.compartment {
+  width: 600px;
+}
+
+
+/* ================
+  Typography
+================ */
+
+/* Heading Styles */
+
+.h1 {
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.h2 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* Body Copy */
+
+.large-print {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.medium-print {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.small-print {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.fine-print {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+
+/* ================
+  Colors
+================ */
+
+.gray {
+  color: #444;
+}

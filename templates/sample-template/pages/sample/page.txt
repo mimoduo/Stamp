@@ -1,0 +1,7 @@
+Header
+
+hero.jpg [images/Hero Image]Content
+
+Footer
+
+Legal

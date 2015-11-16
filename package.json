@@ -1,0 +1,23 @@
+{
+  "name": "SILK-Emails",
+  "version": "0.1.0",
+  "description": "A small library for building emails",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idfive/SILK.git"
+  },
+  "author": "idfive",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-html2txt": "^1.1.0",
+    "gulp-inline-css": "^3.0.0",
+    "gulp-inline-source": "^2.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-livereload": "^3.8.1"
+  }
+}
