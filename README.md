@@ -27,5 +27,7 @@ Stamp is library for automating the email template workflow using Jade and Gulp 
   * _The terminal will now operate within the Stamp folder_
 * Type in: npm install
   * This will install all the modules necessary for gulp to run
+  * OSX users may have to type in 'sudo npm install'
 * Type in: gulp
-  * This will begin the automated workflow
+  * This will run all gulp tasks + a watch task
+  * gulp-livereload requires a browser extension: http://livereload.com/extensions/
