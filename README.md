@@ -20,7 +20,7 @@ Stamp is library for automating the email template workflow using Jade and Gulp 
 
 ##Installation
 
-Make sure node is installed: https://nodejs.org/en/download/ before attempting to install Stamp. Node is required as a package manager used in the following steps.
+Make sure node is installed before attempting to install Stamp: https://nodejs.org/en/download/ Node is required as a package manager used in the following steps.
 
 * Open up a terminal / command prompt
   * Type in: cd
