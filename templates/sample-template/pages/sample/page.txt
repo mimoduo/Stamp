@@ -1,5 +1,5 @@
 Stamp Header
 
-Hero Image [images/hero.jpg]Stamp Content
+Hero Image [../../images/hero.jpg]Stamp Content
 
 Stamp Footer
