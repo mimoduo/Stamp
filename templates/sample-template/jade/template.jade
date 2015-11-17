@@ -1,7 +1,7 @@
-block page-variables
-
 include ../jade/template-variables.jade
 include ../../global-jade/mixins.jade
+
+block page-variables
 
 doctype transitional
 html(xmlns="http://www.w3.org/1999/xhtml")
@@ -14,7 +14,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
             tr
               td
                 block header
-                  p Stamp Header
+                  p #{header}
             tr
               td
                 block hero
