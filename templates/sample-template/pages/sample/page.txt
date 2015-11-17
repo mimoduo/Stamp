@@ -1,3 +1,5 @@
+Stamp Header
+
 Hero Image [../../images/hero.jpg]Stamp Content
 
 Stamp Footer

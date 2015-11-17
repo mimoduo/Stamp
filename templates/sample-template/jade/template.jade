@@ -1,5 +1,6 @@
-include ../jade/template-variables.jade
+include ../../global-jade/variables.jade
 include ../../global-jade/mixins.jade
+include ../jade/variables.jade
 
 block page-variables
 
@@ -14,7 +15,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
             tr
               td
                 block header
-                  p #{header}
+                  p Stamp Header
             tr
               td
                 block hero
