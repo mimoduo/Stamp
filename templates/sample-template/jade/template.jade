@@ -8,7 +8,9 @@ include ../jade/variables.jade
 include ../jade/mixins.jade
 
 block page-variables
-  - var row = ['', '', '']
+
+block page-styles
+  - var smallRow = ['small-print', 'gray']
 
 doctype transitional
 html(xmlns="http://www.w3.org/1999/xhtml")
@@ -19,7 +21,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
         td
           table.compartment(align="center")
             tr
-              td(class=row)
+              td
                 block header
                   p Stamp Header
             tr
@@ -32,7 +34,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
                 block content
                   p Stamp Content
             tr
-              td
+              td(class=smallRow)
                 block footer
                   p Stamp Footer
 
