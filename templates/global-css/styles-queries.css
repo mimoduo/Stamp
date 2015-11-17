@@ -1,23 +1,4 @@
 /* ================
-  Desktop
-================ */
-
-@media (min-width: 600px) {
-
-  /* Display Tools */
-
-  .show-desktop {
-    display: block;
-  }
-
-  .hide-desktop {
-    display: none;
-  }
-
-}
-
-
-/* ================
   Mobile
 ================ */
 
