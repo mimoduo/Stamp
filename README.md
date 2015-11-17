@@ -1,5 +1,7 @@
 #Stamp
 
+<img src="http://github.com/mimoduo/Stamp/logo.png" alt="Stamp logo of two mirrored triangles with the word Stamp sitting below" />
+
 Stamp is library for automating the email template workflow using Jade and Gulp in unison.
 
 ##Features
