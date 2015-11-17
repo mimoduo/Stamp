@@ -10,6 +10,7 @@ include ../jade/mixins.jade
 block page-variables
 
 block page-styles
+  - var contentRow = ['medium-print', 'gray']
   - var smallRow = ['small-print', 'gray']
 
 doctype transitional
@@ -30,7 +31,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
                   +a('https://github.com/mimoduo/Stamp')
                     +img('Hero Image', 'hero.jpg', false)
             tr
-              td
+              td(class=smallRow)
                 block content
                   p Stamp Content
             tr
