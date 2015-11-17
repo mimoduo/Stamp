@@ -11,5 +11,8 @@ mixin a(link)
 //- Inline Image
 //- ================
 
-mixin img(alt, file)
-  img(alt="#{alt}", src="#{templateAssetUrl}#{templateImageUrl}#{file}")
+mixin img(alt, file, global)
+  if global
+    img(alt="#{alt}", src="#{globalAssetUrl}#{globalImageUrl}#{file}")
+  else
+    img(alt="#{alt}", src="#{templateAssetUrl}#{templateImageUrl}#{file}")
