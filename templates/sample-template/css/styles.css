@@ -50,6 +50,10 @@
   Colors
 ================ */
 
+.dark-gray {
+  color: #333;
+}
+
 .gray {
-  color: #444;
+  color: #555;
 }
