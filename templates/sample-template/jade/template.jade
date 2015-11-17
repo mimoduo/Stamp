@@ -7,26 +7,25 @@ doctype transitional
 html(xmlns="http://www.w3.org/1999/xhtml")
   include ../../global-jade/head.jade
   body
-    table(bgcolor="#fafafa")
+    table(bgcolor="")
       tr
         td
           table.compartment(align="center")
             tr
               td
                 block header
-                  p Header
+                  p Stamp Header
             tr
               td
                 block hero
-                  +a('google.com')
-                    +img('hero.jpg', 'Hero Image')
+                  +a('https://github.com/mimoduo/Stamp')
+                    +img('Hero Image', 'hero.jpg')
             tr
               td
                 block content
-                  p Content
+                  p Stamp Content
             tr
               td
                 block footer
-                  p Footer
-                  p Legal
+                  p Stamp Footer
 

@@ -1,7 +1,5 @@
-Header
+Stamp Header
 
-hero.jpg [images/Hero Image]Content
+Hero Image [../../images/hero.jpg]Stamp Content
 
-Footer
-
-Legal
+Stamp Footer
