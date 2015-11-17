@@ -8,6 +8,7 @@ include ../jade/variables.jade
 include ../jade/mixins.jade
 
 block page-variables
+  - var row = ['', '', '']
 
 doctype transitional
 html(xmlns="http://www.w3.org/1999/xhtml")
@@ -18,7 +19,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
         td
           table.compartment(align="center")
             tr
-              td
+              td(class=row)
                 block header
                   p Stamp Header
             tr
