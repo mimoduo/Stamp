@@ -14,9 +14,9 @@
 
 **Jade** as an HTML compiler
 
-* _global jade:_ contains regions, mixins, and variables for templates ~ Global Level
-* _template jade:_ contains mixins, variables, and a template for pages ~ Template Level
-* _page jade:_ contains ability to override inherited configurations and template blocks ~ Page Level
+* _global jade:_ Global Level ~ configuration and tools for all templates
+* _template jade:_ Template Level ~ can override global level, provides configurable template to pages
+* _page jade:_ Page Level ~ extends template level, can override global level and template level
 
 ##Installation
 
