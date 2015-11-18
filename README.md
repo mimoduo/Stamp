@@ -20,7 +20,7 @@
 
 ##Getting Accustomed
 
-stamp/templates/sample-template/jade/template.jade is where the real hottness goes on. Each template folder created, in this example it is "sample-template", will be your stamp for multiple pages. Individual pages have the ability to override any variables or blocks that were inherited from either the global level or the template level.
+_stamp/templates/sample-template/jade/template.jade_ is where the real hottness goes on. Each template folder created, in this example it is "sample-template", will be your stamp for multiple pages. Individual pages have the ability to override any variables or blocks that were inherited from either the global level or the template level.
 
 ##Installation
 
