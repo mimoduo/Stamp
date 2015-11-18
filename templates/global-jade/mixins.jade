@@ -2,8 +2,12 @@
 //- Inline Anchor
 //- ================
 
-mixin a(link)
-  a(href="", target="_blank")
+mixin a(link, classNames)
+  a(
+    class=className,
+    href=link,
+    target="_blank"
+  )
     block
 
 
@@ -11,8 +15,16 @@ mixin a(link)
 //- Inline Image
 //- ================
 
-mixin img(alt, file, global)
+mixin img(alt, file, global, classNames)
   if global
-    img(alt="#{alt}", src="#{globalAssetUrl}#{globalImageUrl}#{file}")
+    img(
+      alt="#{alt}",
+      class=classNames
+      src="#{globalAssetUrl}#{globalImageUrl}#{file}"
+    )
   else
-    img(alt="#{alt}", src="#{templateAssetUrl}#{templateImageUrl}#{file}")
+    img(
+      alt="#{alt}",
+      class=classNames
+      src="#{templateAssetUrl}#{templateImageUrl}#{file}"
+    )
