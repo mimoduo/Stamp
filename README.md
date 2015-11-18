@@ -18,6 +18,10 @@
 * _template jade:_ Template Level ~ can override global level, provides template to pages
 * _page jade:_ Page Level ~ extends template level, can override global level and template level
 
+##Getting Accustomed
+
+stamp/templates/sample-template/jade/template.jade is where the real hottness goes on. Each template folder created, in this example it is "sample-template", will be your stamp for multiple pages. Individual pages have the ability to override any variables or blocks that were inherited from either the global level or the template level.
+
 ##Installation
 
 Make sure node is installed before attempting to install Stamp: https://nodejs.org/en/download/ Node is required as a package manager used in the following steps.
