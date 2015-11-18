@@ -28,6 +28,35 @@ body {
 
 
 /* ================
+  Images
+================ */
+
+/* Image Height Quirk */
+
+img.full {
+  height: auto;
+}
+
+/* Linked Images Quirk */
+
+a img {
+  border-style: none;
+  border-width: 0;
+}
+
+
+/* ================
+  Tables
+================ */
+
+table {
+  border-collapse: collapse;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+
+/* ================
   Space Tools
 ================ */
 
@@ -184,29 +213,17 @@ body {
 
 
 /* ================
-  Images
+  Type Tools
 ================ */
 
-/* Image Height Quirk */
-
-img.full {
-  height: auto;
+.text-left {
+  text-align: left;
 }
 
-/* Linked Images Quirk */
-
-a img {
-  border-style: none;
-  border-width: 0;
+.text-center {
+  text-align: center;
 }
 
-
-/* ================
-  Tables
-================ */
-
-table {
-  border-collapse: collapse;
-  word-wrap: break-word;
-  width: 100%;
+.text-right {
+  text-align: right;
 }
