@@ -18,12 +18,12 @@ var livereload = require('gulp-livereload');
 var paths = {
 
   jade: {
-    src:  'templates/**/pages/**/*.jade',
-    dest: './templates',
+    src:  'stamps/**/pages/**/*.jade',
+    dest: './stamps',
   },
   html: {
-    src:  'templates/**/pages/**/*.html',
-    dest: './templates',
+    src:  'stamps/**/pages/**/*.html',
+    dest: './stamps',
   }
 
 };
@@ -70,7 +70,7 @@ gulp.task('create-txt', ['compile-jade'], function() {
 gulp.task('watch', function() {
 
   livereload.listen();
-  gulp.watch('templates/**/**/*', ['compile-jade', 'create-txt']);
+  gulp.watch('stamps/**/**/*', ['compile-jade', 'create-txt']);
 
 });
 
