@@ -1,10 +1,10 @@
 /* ================
-  Mobile
+  Small Screens
 ================ */
 
 @media (max-width: 600px) {
 
-  /* Style */
+  /* Column Tools */
 
   .compartment {
     width: 320px;
