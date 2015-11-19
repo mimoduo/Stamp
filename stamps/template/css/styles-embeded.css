@@ -7,7 +7,7 @@
   /* Column Tools */
 
   .compartment {
-    width: 320px;
+    width: 320px !important;
   }
 
 }
