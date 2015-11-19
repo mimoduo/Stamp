@@ -227,3 +227,7 @@ table {
 .text-right {
   text-align: right;
 }
+
+.no-underline {
+  text-decoration: none;
+}
