@@ -6,11 +6,11 @@
 
   /* Display Tools */
 
-  .show-mobile {
+  .show-small {
     display: block;
   }
 
-  .hide-mobile {
+  .hide-small {
     display: none;
   }
 
