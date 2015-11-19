@@ -4,8 +4,8 @@
 
 mixin a(link, classNames)
   a(
-    class=className,
-    href=link,
+    class=classNames
+    href=link
     target="_blank"
   )
     block
@@ -18,13 +18,13 @@ mixin a(link, classNames)
 mixin img(alt, file, global, classNames)
   if global
     img(
-      alt="#{alt}",
+      alt=alt
       class=classNames
       src="#{globalAssetUrl}#{globalImageUrl}#{file}"
     )
   else
     img(
-      alt="#{alt}",
+      alt=alt
       class=classNames
       src="#{templateAssetUrl}#{templateImageUrl}#{file}"
     )
