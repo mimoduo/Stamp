@@ -10,7 +10,6 @@ include ../jade/mixins.jade
 block page-variables
 
 block page-styles
-  - var contentRow = ['medium-print', 'dark-gray']
   - var smallRow = ['small-print', 'gray']
 
 doctype transitional
@@ -20,7 +19,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
     table(bgcolor="")
       tr
         td
-          table.compartment(align="center")
+          table.compartment(valign="center")
             tr
               td
                 block header
@@ -33,7 +32,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
             tr
               td
                 block content
-                  p(class=contentRow) Stamp Content
+                  p Stamp Content
             tr
               td
                 block footer
