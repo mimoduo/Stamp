@@ -25,24 +25,14 @@
 
 /* Body Copy */
 
-.large-print {
-  font-size: 16px;
-  line-height: 20px;
-}
+p {}
 
-.medium-print {
+.body-copy {
   font-size: 14px;
-  line-height: 18px;
-}
-
-.small-print {
-  font-size: 12px;
-  line-height: 16px;
 }
 
 .fine-print {
-  font-size: 10px;
-  line-height: 14px;
+  font-size: 12px;
 }
 
 
@@ -50,10 +40,10 @@
   Colors
 ================ */
 
-.dark-gray {
-  color: #333;
+.bg-dark-gray {
+  background: #333;
 }
 
-.gray {
-  color: #555;
+.dark-gray {
+  color: #333;
 }
