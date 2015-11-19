@@ -1,4 +1,4 @@
-<img src="https://github.com/mimoduo/Stamp/blob/master/logo.png?raw=true" alt="Stamp logo of two mirrored triangles with the word Stamp sitting below" />
+<img src="https://raw.githubusercontent.com/mimoduo/Stamp/master/stamps/global/images/logo.jpg" alt="Stamp logo of two mirrored triangles with the word Stamp sitting below" />
 
 **Stamp** is library for automating the email template workflow using Jade and Gulp in unison.
 
