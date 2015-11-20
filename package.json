@@ -1,5 +1,5 @@
 {
-  "name": "SILK-Emails",
+  "name": "Stamp",
   "version": "0.1.0",
   "description": "A small library for building emails",
   "main": "index.html",
@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/idfive/SILK.git"
+    "url": "https://github.com/mimoduo/Stamp.git"
   },
-  "author": "idfive",
+  "author": "mimoduo",
   "license": "BSD-2-Clause",
   "devDependencies": {
     "gulp": "^3.9.0",
