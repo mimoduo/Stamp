@@ -7,6 +7,8 @@ body {
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 
@@ -42,6 +44,13 @@ body {
   Images
 ================ */
 
+/* Image Scaling Quirk */
+/* https://css-tricks.com/ie-fix-bicubic-scaling-for-images/ */
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
 /* Image Height Quirk */
 
 img.full {
@@ -62,6 +71,7 @@ a img {
 
 table {
   border-collapse: collapse;
+  border-spacing: 0;
   word-wrap: break-word;
   width: 100%;
 }
