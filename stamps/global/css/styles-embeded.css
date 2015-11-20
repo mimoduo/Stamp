@@ -4,14 +4,24 @@
 
 @media (max-width: 600px) {
 
+  /* Column Tools */
+
+  .compartment {
+    width: 300px !important;
+  }
+
   /* Display Tools */
 
   .show-small {
-    display: block;
+    display: block !important;
+    overflow: hidden !important;
+    max-height: auto !important;
   }
 
   .hide-small {
-    display: none;
+    display: none !important;
+    overflow: hidden !important;
+    max-height: 0 !important;
   }
 
 }

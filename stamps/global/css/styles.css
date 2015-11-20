@@ -28,6 +28,17 @@ body {
 
 
 /* ================
+  Hide Tool
+================ */
+
+.hide-large {
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+}
+
+
+/* ================
   Images
 ================ */
 

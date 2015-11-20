@@ -1,13 +1,7 @@
 /* ================
-  Small Screens
+  Style
 ================ */
 
-@media (max-width: 600px) {
-
-  /* Column Tools */
-
-  .compartment {
-    width: 320px !important;
-  }
-
+.example {
+  display: block;
 }
