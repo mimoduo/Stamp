@@ -2,7 +2,7 @@
   All Screens
 ================ */
 
-a[x-apple-data-detectors]{
+a[x-apple-data-detectors] {
   font-size: inherit !important;
   font-family: inherit !important;
   font-weight: inherit !important;
