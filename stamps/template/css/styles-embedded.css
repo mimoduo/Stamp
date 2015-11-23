@@ -1,0 +1,20 @@
+/* ================
+  All Screens
+================ */
+
+.embedded {
+  display: block;
+}
+
+
+/* ================
+  Small Screens
+================ */
+
+@media only screen and (max-width: 620px) {
+
+  .embedded-small {
+    display: block;
+  }
+
+}
