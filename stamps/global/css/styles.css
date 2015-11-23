@@ -239,6 +239,10 @@ table {
   Type Tools
 ================ */
 
+strong {
+  font-weight: bold;
+}
+
 .text-left {
   text-align: left;
 }
