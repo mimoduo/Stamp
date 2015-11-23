@@ -28,6 +28,10 @@ body {
   width: 100%;
 }
 
+.half {
+  width: 50%;
+}
+
 
 /* ================
   Hide Tool

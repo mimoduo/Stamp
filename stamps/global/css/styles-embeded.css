@@ -10,12 +10,16 @@
     width: 300px !important;
   }
 
+  .stack-small {
+    width: 100% !important;
+  }
+
   /* Display Tools */
 
   .show-small {
     display: block !important;
     overflow: visible !important;
-    max-height: auto !important;
+    max-height: initial !important;
   }
 
   .hide-small {
