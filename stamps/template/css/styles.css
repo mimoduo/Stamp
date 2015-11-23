@@ -59,3 +59,7 @@ a {}
 .dark-gray {
   color: #333;
 }
+
+.bg-white {
+  background: #fff;
+}
