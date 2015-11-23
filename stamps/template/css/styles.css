@@ -31,12 +31,8 @@ h4 {}
 
 /* Body Copy */
 
-p, li {
+p, li, .body-copy {
   mso-line-height-rule: exactly;
-}
-
-.body-copy {
-  font-size: 14px;
 }
 
 .fine-print {
