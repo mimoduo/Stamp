@@ -31,7 +31,9 @@ h4 {}
 
 /* Body Copy */
 
-p {}
+p, li {
+  mso-line-height-rule: exactly;
+}
 
 .body-copy {
   font-size: 14px;
