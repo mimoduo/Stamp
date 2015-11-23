@@ -25,6 +25,7 @@ a[x-apple-data-detectors] {
   }
 
   .stack-small {
+    display: block !important;
     width: 100% !important;
   }
 
