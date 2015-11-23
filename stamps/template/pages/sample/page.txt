@@ -3,4 +3,6 @@ Stamp Header
 Hero Image [../../images/hero.jpg] [https://github.com/mimoduo/Stamp]STAMP HEADLINE
 Stamp Content
 
+Stamp Content not visible in Outlook
+
 Stamp Footer
