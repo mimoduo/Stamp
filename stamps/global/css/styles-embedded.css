@@ -20,10 +20,6 @@ a[x-apple-data-detectors] {
 
   /* Column Tools */
 
-  .compartment {
-    width: 300px !important;
-  }
-
   .full-small {
     display: block !important;
     width: 100% !important;
