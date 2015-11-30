@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 
 
 // ================
-// Set Paths
+// Set File Paths
 // ================
 
 var paths = {
