@@ -43,9 +43,9 @@ a[x-apple-data-detectors] {
   }
 
   .hide-small {
-    display: none !important;
-    overflow: hidden !important;
-    max-height: 0 !important;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
   }
 
 }
