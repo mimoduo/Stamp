@@ -2,6 +2,15 @@
   All Screens
 ================ */
 
+/* Correct alignment and incomplete background colors */
+
+ReadMsgBody,
+.ExternalClass {
+  width: 100%;
+}
+
+/* Prevent link appearance on data-like content */
+
 a[x-apple-data-detectors] {
   font-family: inherit !important;
   font-size: inherit !important;
