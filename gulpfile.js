@@ -1,19 +1,18 @@
-// ========================================
+// ================
 // Required plugins
-// ========================================
+// ================
 
-// Plugin declarations
-var gulp = require('gulp');
-var jade = require('gulp-jade');
-var inlineCSS = require('gulp-inline-css');
-var inlineSource = require('gulp-inline-source');
-var html2txt = require('gulp-html2txt');
-var livereload = require('gulp-livereload');
+var gulp = require('gulp'),
+    jade = require('gulp-jade'),
+    inlineCSS = require('gulp-inline-css'),
+    inlineSource = require('gulp-inline-source'),
+    html2txt = require('gulp-html2txt'),
+    livereload = require('gulp-livereload');
 
 
-// ========================================
+// ================
 // Set Paths
-// ========================================
+// ================
 
 var paths = {
 
@@ -29,9 +28,9 @@ var paths = {
 };
 
 
-// ========================================
+// ================
 // Jade
-// ========================================
+// ================
 
 gulp.task('compile-jade', function() {
 
@@ -49,9 +48,9 @@ gulp.task('compile-jade', function() {
 });
 
 
-// ========================================
+// ================
 // TXT
-// ========================================
+// ================
 
 gulp.task('create-txt', ['compile-jade'], function() {
 
@@ -63,9 +62,9 @@ gulp.task('create-txt', ['compile-jade'], function() {
 });
 
 
-// ========================================
+// ================
 // Create Watch Task
-// ========================================
+// ================
 
 gulp.task('watch', function() {
 
@@ -75,8 +74,8 @@ gulp.task('watch', function() {
 });
 
 
-// ========================================
+// ================
 // Default 'gulp' task
-// ========================================
+// ================
 
 gulp.task('default', ['compile-jade', 'create-txt', 'watch']);
