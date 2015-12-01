@@ -24,8 +24,11 @@ html(xmlns="http://www.w3.org/1999/xhtml")
             tr
               td
                 block hero
-                  +a('https://github.com/mimoduo/Stamp')
-                    +img('Hero Image', 'hero.jpg', false, 'full')
+                  a(href="https://github.com/mimoduo/Stamp")
+                    img(
+                      alt="Hero"
+                      src="../images/hero.jpg"
+                    )
             tr
               td
                 block headline
