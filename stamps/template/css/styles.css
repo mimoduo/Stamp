@@ -46,7 +46,7 @@ p {
   margin-bottom: 16px;
 }
 
-p, li, .body-copy {
+.body-copy {
   mso-line-height-rule: exactly;
 }
 
