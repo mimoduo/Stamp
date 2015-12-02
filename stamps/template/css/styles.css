@@ -64,14 +64,10 @@ a:hover {}
   Colors
 ================ */
 
-.bg-dark-gray {
-  background: #333333;
-}
-
-.dark-gray {
-  color: #333333;
-}
-
 .bg-white {
   background: #ffffff;
+}
+
+.gray {
+  color: #888888;
 }
