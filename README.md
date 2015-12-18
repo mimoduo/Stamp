@@ -24,19 +24,19 @@ Stamp is structured to provide multiple levels of shared characteristics while s
 * Solves various issues prevelant in email clients.
 * Sets up the ability for full column table rows on small screens.
 * Provides a system for showing and hiding content.
-* Contains the <head> section of every email template.
+* Contains the head section of every email template.
 
 ###Template Level
 
 * Provides a template for all pages pertaining to that template.
 * Contains styles that are more focused on design rather than solving email client quirks.
-* Can override the <title> element from the global level.
+* Can override the title element from the global level.
 
 ###Pages Level
 
 * Can override any blocks on the template level.
 * Houses content for each individual page.
-* Can override the <title> element from the template level.
+* Can override the title element from the template level.
 
 ##Solved Email Client Quirks
 
@@ -45,4 +45,4 @@ Stamp is structured to provide multiple levels of shared characteristics while s
 * Prevent images from stretching vertically.
 * Prevent odd borders from showing around linked images.
 * Prevent text from scaling oddly in some clients.
-* Ensure that the <strong> element is bolded in all clients.
+* Ensure that the strong element is bolded in all clients.
