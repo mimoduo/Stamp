@@ -9,7 +9,7 @@
 _gulp-jade:_ html template engine<br>
 _gulp-inline-css:_ inlines styles from an external stylesheet<br>
 _gulp-inline-source:_ embeds styles from an external stylesheet<br>
-_gulp-html2txt:_ converts compiled html templates into txt versions<br>
+_gulp-html2txt:_ converts compiled html templates into txt versions
 
 **Jade** as an HTML compiler
 
