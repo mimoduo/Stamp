@@ -37,3 +37,12 @@ Stamp is structured to provide multiple levels of shared characteristics while s
 * Can override any blocks on the template level.
 * Houses content for each individual page.
 * Can override the <title> element from the template level.
+
+##Solved Email Client Quirks
+
+* Prevent link appearance on data-like content in apple clients.
+* Prevent odd image scaling in outlook.
+* Prevent images from stretching vertically.
+* Prevent odd borders from showing around linked images.
+* Prevent text from scaling oddly in some clients.
+* Ensure that the <strong> element is bolded in all clients.
