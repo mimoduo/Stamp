@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/mimoduo/Stamp/master/stamps/global/images/logo.jpg" alt="Stamp logo of two mirrored triangles with the word Stamp sitting below" />
 
-**Stamp*is library for automating the email template workflow using Jade and Gulp in unison.
+**Stamp* is library for automating the email template workflow using Jade and Gulp in unison.
 
 ##Features
 
@@ -10,10 +10,30 @@ _gulp-jade:_ html template engine<br>
 _gulp-inline-css:_ inlines styles from an external stylesheet<br>
 _gulp-inline-source:_ embeds styles from an external stylesheet<br>
 _gulp-html2txt:_ converts compiled html templates into txt versions<br>
-_gulp-livereload:_ automatically refresh the page after saving
 
 **Jade** as an HTML compiler
 
-_global jade:_ Global Level ~ configuration and tools for all templates<br>
-_template jade:_ Template Level ~ can override global level, provides template to pages<br>
-_page jade:_ Page Level ~ extends template level, can override global level and template level
+Jade was chosen for Stamp because it provides a level of inheritance perfect for sharing markup and characteristics between several templates.
+
+##Hierarchical Structure
+
+Stamp is structured to provide multiple levels of shared characteristics while still allowing for the author to individualize each email template.
+
+###Global Level
+
+* Solves various issues prevelant in email clients.
+* Sets up the ability for full column table rows on small screens.
+* Provides a system for showing and hiding content.
+* Contains the <head> section of every email template.
+
+###Template Level
+
+* Provides a template for all pages pertaining to that template.
+* Contains styles that are more focused on design rather than solving email client quirks.
+* Can override the <title> element from the global level.
+
+###Pages Level
+
+* Can override any blocks on the template level.
+* Houses content for each individual page.
+* Can override the <title> element from the template level.

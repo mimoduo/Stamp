@@ -6,8 +6,7 @@ var gulp = require('gulp'),
     jade = require('gulp-jade'),
     inlineCSS = require('gulp-inline-css'),
     inlineSource = require('gulp-inline-source'),
-    html2txt = require('gulp-html2txt'),
-    livereload = require('gulp-livereload');
+    html2txt = require('gulp-html2txt');
 
 
 // ================

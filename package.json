@@ -12,7 +12,6 @@
     "gulp-html2txt": "^1.1.0",
     "gulp-inline-css": "^3.0.0",
     "gulp-inline-source": "^2.1.0",
-    "gulp-jade": "^1.1.0",
-    "gulp-livereload": "^3.8.1"
+    "gulp-jade": "^1.1.0"
   }
 }
