@@ -41,8 +41,7 @@ gulp.task('compile-jade', function() {
     .pipe(inlineCSS({
       removeStyleTags: false
     }))
-    .pipe(gulp.dest(paths.jade.dest))
-    .pipe(livereload());
+    .pipe(gulp.dest(paths.jade.dest));
 
 });
 
@@ -55,8 +54,7 @@ gulp.task('create-txt', ['compile-jade'], function() {
 
   return gulp.src(paths.html.src)
     .pipe(html2txt(75))
-    .pipe(gulp.dest(paths.html.dest))
-    .pipe(livereload());
+    .pipe(gulp.dest(paths.html.dest));
 
 });
 
@@ -67,7 +65,6 @@ gulp.task('create-txt', ['compile-jade'], function() {
 
 gulp.task('watch', function() {
 
-  livereload.listen();
   gulp.watch('stamps/**/**/*', ['compile-jade', 'create-txt']);
 
 });
