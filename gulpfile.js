@@ -24,7 +24,7 @@ gulp.task('compile-jade', function() {
     .pipe(inlineCSS({
       removeStyleTags: false
     }))
-    .pipe(gulp.dest(recursiveDest + 'html'));
+    .pipe(gulp.dest(recursiveDest));
 
 });
 
