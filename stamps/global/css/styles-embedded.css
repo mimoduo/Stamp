@@ -31,6 +31,7 @@ a[x-apple-data-detectors] {
 
   .full-small {
     display: block !important;
+    clear: both;
     width: 100% !important;
   }
 
