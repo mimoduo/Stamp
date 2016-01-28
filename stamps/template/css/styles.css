@@ -6,8 +6,6 @@ table {
   font-family: serif;
 }
 
-  td {}
-
 
 /* ================
   Columns
@@ -28,13 +26,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-/* Body Copy */
-
 /* Enforce margins on paragraphs */
 
 p {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin: 16px 0;
 }
 
 .body-copy {
@@ -49,6 +44,8 @@ p {
 a {}
 
 a:hover {}
+
+  a span {}
 
 
 /* ================
