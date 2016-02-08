@@ -15,9 +15,16 @@ body {
   Tables
 ================ */
 
-td {
-  padding: 0;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  word-wrap: break-word;
 }
+
+  td {
+    padding: 0;
+  }
 
 
 /* ================
@@ -36,18 +43,6 @@ td {
 
 .half {
   width: 50%;
-}
-
-
-/* ================
-  Tables
-================ */
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  word-wrap: break-word;
 }
 
 
