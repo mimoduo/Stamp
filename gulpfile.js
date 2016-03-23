@@ -28,6 +28,8 @@ gulp.task('compile-jade', function() {
     .pipe(prettify({
       indent_size: 2
     }))
+    .pipe(gulp.dest(recursiveDest))
+    .pipe(html2txt(75))
     .pipe(gulp.dest(recursiveDest));
 
 });
@@ -37,7 +39,7 @@ gulp.task('compile-jade', function() {
 // TXT
 // ================
 
-gulp.task('create-txt', ['compile-jade'], function() {
+gulp.task('create-txt', function() {
 
   return gulp.src('stamps/**/pages/**/*.html')
     .pipe(html2txt(75))
@@ -52,7 +54,7 @@ gulp.task('create-txt', ['compile-jade'], function() {
 
 gulp.task('watch', function() {
 
-  gulp.watch('stamps/**/**/*', ['compile-jade', 'create-txt']);
+  gulp.watch('stamps/**/**/*', ['compile-jade']);
 
 });
 
@@ -61,4 +63,4 @@ gulp.task('watch', function() {
 // Default 'gulp' task
 // ================
 
-gulp.task('default', ['compile-jade', 'create-txt', 'watch']);
+gulp.task('default', ['compile-jade', 'watch']);
