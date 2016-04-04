@@ -33,8 +33,11 @@
       @media only screen and (max-width:620px) {
         .full-small {
           display: block!important;
-          clear: both;
           width: 100%!important
+        }
+        .column {
+          padding-right: 0!important;
+          padding-left: 0!important
         }
         .show-small {
           display: block!important;
@@ -58,28 +61,40 @@
   </head>
 
   <body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding: 0; width: 100%;">
-    <table bgcolor="" style="border-collapse: collapse; border-spacing: 0; font-family: serif; width: 100%; word-wrap: break-word;">
+    <table bgcolor="" style="border-collapse: collapse; border-spacing: 0; width: 100%; word-wrap: break-word;">
       <tr>
-        <td style="padding: 0;">
-          <table align="center" class="compartment" style="border-collapse: collapse; border-spacing: 0; font-family: serif; margin-left: auto; margin-right: auto; width: 600px; word-wrap: break-word;">
+        <td style="font-family: serif; padding: 0;">
+          <table align="center" class="compartment" style="border-collapse: collapse; border-spacing: 0; margin-left: auto; margin-right: auto; width: 600px; word-wrap: break-word;">
             <tr>
-              <td style="padding: 0;">
+              <td style="font-family: serif; padding: 0;">
                 <p style="margin: 16px 0;">Stamp Header</p>
               </td>
             </tr>
             <tr>
-              <td style="padding: 0;">
-                <a href="https://github.com/mimoduo/Stamp" target="_blank" style=""><img alt="Hero" src="../../images/hero.jpg" style="-ms-interpolation-mode: bicubic; border-style: none; border-width: 0;"></a>
+              <td style="font-family: serif; padding: 0;">
+                <a href="https://github.com/mimoduo/Stamp" target="_blank" style=""><img alt="Hero" src="../../images/hero.jpg" class="full" style="-ms-interpolation-mode: bicubic; border-style: none; border-width: 0; display: block; height: auto; width: 100%;"></a>
               </td>
             </tr>
             <tr>
-              <td style="padding: 0;">
+              <td style="font-family: serif; padding: 0;">
                 <h1 style="font-weight: bold;">Stamp Headline</h1>
                 <p style="margin: 16px 0;">Stamp Content</p>
               </td>
             </tr>
             <tr>
-              <td style="padding: 0;">
+              <td style="font-family: serif; padding: 0;">
+                <table style="border-collapse: collapse; border-spacing: 0; width: 100%; word-wrap: break-word;">
+                  <tr>
+                    <th class="full-small column" style="padding: 0 10px; text-align: left;">
+                      <h2 style="font-weight: bold;">Column 1</h2> </th>
+                    <th class="full-small column" style="padding: 0 10px; text-align: left;">
+                      <h2 style="font-weight: bold;">Column 2</h2> </th>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="font-family: serif; padding: 0;">
                 <p style="margin: 16px 0;">Stamp Footer</p>
               </td>
             </tr>

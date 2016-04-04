@@ -29,20 +29,10 @@ gulp.task('compile-jade', function() {
       indent_size: 2
     }))
     .pipe(gulp.dest(recursiveDest))
-    .pipe(html2txt(75))
-    .pipe(gulp.dest(recursiveDest));
-
-});
-
-
-// ================
-// TXT
-// ================
-
-gulp.task('create-txt', function() {
-
-  return gulp.src('template/pages/**/*.html')
-    .pipe(html2txt(75))
+    .pipe(html2txt({
+      ignoreImage: true,
+      wordwrap: 75
+    }))
     .pipe(gulp.dest(recursiveDest));
 
 });
@@ -54,7 +44,7 @@ gulp.task('create-txt', function() {
 
 gulp.task('watch', function() {
 
-  gulp.watch('template/pages/**/*.jade', ['compile-jade']);
+  gulp.watch('**/*', ['compile-jade']);
 
 });
 

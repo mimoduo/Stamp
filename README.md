@@ -46,3 +46,4 @@ Stamp is structured to provide multiple levels of shared characteristics while s
 * Prevent odd borders from showing around linked images.
 * Prevent text from scaling oddly in some clients.
 * Ensure that the strong element is bolded in all clients.
+* Typography not properly inherited in gmail.

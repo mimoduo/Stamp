@@ -1,5 +1,5 @@
 /* ================
-  Base
+  Body
 ================ */
 
 body {
@@ -21,6 +21,10 @@ table {
   border-spacing: 0;
   word-wrap: break-word;
 }
+
+  th {
+    text-align: left;
+  }
 
   td {
     padding: 0;

@@ -1,6 +1,8 @@
 Stamp Header
 
-Hero [../../images/hero.jpg] [https://github.com/mimoduo/Stamp]STAMP HEADLINE
+[https://github.com/mimoduo/Stamp]STAMP HEADLINE
 Stamp Content
 
+COLUMN 1
+COLUMN 2
 Stamp Footer

@@ -1,8 +1,8 @@
 /* ================
-  Tables
+  Table Rows
 ================ */
 
-table {
+td {
   font-family: serif;
 }
 
@@ -13,6 +13,10 @@ table {
 
 .compartment {
   width: 600px;
+}
+
+.column {
+  padding: 0 10px;
 }
 
 
@@ -30,10 +34,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin: 16px 0;
-}
-
-.body-copy {
-  mso-line-height-rule: exactly;
 }
 
 

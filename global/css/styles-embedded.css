@@ -31,8 +31,12 @@ a[x-apple-data-detectors] {
 
   .full-small {
     display: block !important;
-    clear: both;
     width: 100% !important;
+  }
+
+  .column {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
 
   /* Display Tools */
