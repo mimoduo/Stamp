@@ -2,7 +2,7 @@
 // Required plugins
 // ================
 
-var recursiveDest = './stamps';
+var recursiveDest = './template/pages/';
 var gulp = require('gulp'),
     jade = require('gulp-jade'),
     inlineCSS = require('gulp-inline-css'),
@@ -17,7 +17,7 @@ var gulp = require('gulp'),
 
 gulp.task('compile-jade', function() {
 
-  return gulp.src('stamps/**/pages/**/*.jade')
+  return gulp.src('template/pages/**/*.jade')
     .pipe(jade({
       pretty: true
     }))
@@ -41,7 +41,7 @@ gulp.task('compile-jade', function() {
 
 gulp.task('create-txt', function() {
 
-  return gulp.src('stamps/**/pages/**/*.html')
+  return gulp.src('template/pages/**/*.html')
     .pipe(html2txt(75))
     .pipe(gulp.dest(recursiveDest));
 
@@ -54,7 +54,7 @@ gulp.task('create-txt', function() {
 
 gulp.task('watch', function() {
 
-  gulp.watch('stamps/**/**/*', ['compile-jade']);
+  gulp.watch('template/pages/**/*.jade', ['compile-jade']);
 
 });
 
