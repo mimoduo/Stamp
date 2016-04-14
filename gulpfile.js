@@ -2,7 +2,6 @@
 // Required plugins
 // ================
 
-var recursiveDest = './template/pages/';
 var gulp = require('gulp'),
     jade = require('gulp-jade'),
     inlineCSS = require('gulp-inline-css'),
@@ -28,12 +27,25 @@ gulp.task('compile-jade', function() {
     .pipe(prettify({
       indent_size: 2
     }))
-    .pipe(gulp.dest(recursiveDest))
+    .pipe(gulp.dest('./template/pages/'))
     .pipe(html2txt({
       ignoreImage: true,
       wordwrap: 75
     }))
-    .pipe(gulp.dest(recursiveDest));
+    .pipe(gulp.dest('./template/pages/'));
+
+});
+
+
+// ================
+// Postcss
+// ================
+
+gulp.task('postcss', function() {
+
+  return gulp.src('')
+    .pipe(postcss())
+    .pipe(gulp.dest())
 
 });
 
