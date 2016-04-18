@@ -7,6 +7,7 @@
 **Gulp** as a preprocessor
 
 _gulp-jade:_ html template engine<br>
+_gulp-postcss:_ css post processor<br>
 _gulp-inline-css:_ inlines styles from an external stylesheet<br>
 _gulp-inline-source:_ embeds styles from an external stylesheet<br>
 _gulp-html2txt:_ converts compiled html templates into txt versions
@@ -14,6 +15,10 @@ _gulp-html2txt:_ converts compiled html templates into txt versions
 **Jade** as an HTML compiler
 
 Jade was chosen for Stamp because it provides a level of inheritance perfect for sharing markup and characteristics between several templates.
+
+**Postcss** as a CSS post processor
+
+Postcss was chosen for Stamp because it can serve as a simple, yet flexible, tool that will evolve with the needs of each individual template.
 
 ##Hierarchical Structure
 
@@ -28,6 +33,7 @@ Stamp is structured to provide multiple levels of shared characteristics while s
 
 ###Template Level
 
+* Provides a build system that can support multiple templates.
 * Provides a template for all pages pertaining to that template.
 * Contains styles that are more focused on design rather than solving email client quirks.
 * Can override the title element from the global level.
