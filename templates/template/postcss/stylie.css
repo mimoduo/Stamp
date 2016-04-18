@@ -1,0 +1,68 @@
+/* ================
+  Table Rows
+================ */
+
+td {
+  font-family: serif;
+}
+
+
+/* ================
+  Columns
+================ */
+
+.compartment {
+  width: 600px;
+}
+
+.column {
+  padding: 0 10px;
+}
+
+
+/* ================
+  Typography
+================ */
+
+/* Heading Styles */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* Enforce margins on paragraphs */
+
+p {
+  margin: 16px 0;
+}
+
+
+/* ================
+  Links
+================ */
+
+a {}
+
+a:hover {}
+
+  a span {}
+
+
+/* ================
+  Buttons
+================ */
+
+.button {}
+
+
+/* ================
+  Colors
+================ */
+
+.bg-white {
+  background: #ffffff;
+}
+
+.white {
+  color: #ffffff;
+}

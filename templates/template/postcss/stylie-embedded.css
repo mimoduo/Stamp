@@ -1,0 +1,16 @@
+/* ================
+  All Screens
+================ */
+
+
+/* ================
+  Small Screens
+================ */
+
+@media only screen and (max-width: 620px) {
+
+  .compartment {
+    width: 300px !important;
+  }
+
+}

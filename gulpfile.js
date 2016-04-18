@@ -4,19 +4,20 @@
 
 var gulp = require('gulp'),
     jade = require('gulp-jade'),
+    postcss = require('gulp-postcss'),
     inlineCSS = require('gulp-inline-css'),
     inlineSource = require('gulp-inline-source'),
     prettify = require('gulp-prettify'),
-    html2txt = require('gulp-html2txt');
-
+    html2txt = require('gulp-html2txt'),
+    path = require('path');
 
 // ================
 // Jade
 // ================
 
-gulp.task('compile-jade', function() {
+gulp.task('compile-jade', ['process-postcss'], function() {
 
-  return gulp.src('template/pages/**/*.jade')
+  return gulp.src('templates/**/pages/**/*.jade')
     .pipe(jade({
       pretty: true
     }))
@@ -27,12 +28,12 @@ gulp.task('compile-jade', function() {
     .pipe(prettify({
       indent_size: 2
     }))
-    .pipe(gulp.dest('./template/pages/'))
+    .pipe(gulp.dest('./templates'))
     .pipe(html2txt({
       ignoreImage: true,
       wordwrap: 75
     }))
-    .pipe(gulp.dest('./template/pages/'));
+    .pipe(gulp.dest('./templates'));
 
 });
 
@@ -41,11 +42,13 @@ gulp.task('compile-jade', function() {
 // Postcss
 // ================
 
-gulp.task('postcss', function() {
+gulp.task('process-postcss', function() {
 
-  return gulp.src('')
-    .pipe(postcss())
-    .pipe(gulp.dest())
+  return gulp.src('./templates/**/postcss/*.css')
+    .pipe(postcss([
+      require('postcss-simple-vars')
+    ]))
+    .pipe(gulp.dest('./templates'));
 
 });
 
@@ -56,7 +59,8 @@ gulp.task('postcss', function() {
 
 gulp.task('watch', function() {
 
-  gulp.watch('**/*', ['compile-jade']);
+  gulp.watch('templates/**/pages/**/*.jade', ['compile-jade']);
+  gulp.watch('templates/**/postcss/*.css', ['compile-jade']);
 
 });
 
