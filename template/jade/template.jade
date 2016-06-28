@@ -2,8 +2,8 @@
 //- Template Level
 //- ================
 
-include ../../../global/jade/variables.jade
-include ../../../global/jade/mixins.jade
+include ../../global/jade/variables.jade
+include ../../global/jade/mixins.jade
 include ../jade/variables.jade
 include ../jade/mixins.jade
 
@@ -11,7 +11,7 @@ block page-variables
 
 doctype transitional
 html(xmlns="http://www.w3.org/1999/xhtml")
-  include ../../../global/jade/head.jade
+  include ../../global/jade/head.jade
   body
     table(bgcolor="")
       tr
@@ -19,8 +19,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
           table.compartment(align="center")
             tr
               td
-                block header
-                  p Stamp Header
+                p Stamp Header
             tr
               td
                 block hero
@@ -46,7 +45,8 @@ html(xmlns="http://www.w3.org/1999/xhtml")
                       h2 Column 1
                     th.full-small.column 
                       h2 Column 2
+                    th.full-small.column 
+                      h2 Column 3
             tr
               td
-                block footer
-                  p Stamp Footer
+                p Stamp Footer

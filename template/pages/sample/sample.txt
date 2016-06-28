@@ -5,4 +5,5 @@ Stamp Content
 
 COLUMN 1
 COLUMN 2
+COLUMN 3
 Stamp Footer

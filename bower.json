@@ -1,6 +1,6 @@
 {
   "name": "Stamp",
-  "description": "A small library for building emails",
+  "description": "A small starter kit for building emails",
   "main": "index.html",
   "authors": [
     "mimoduo"
