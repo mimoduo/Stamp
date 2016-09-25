@@ -2,16 +2,16 @@
 //- Template Level
 //- ================
 
-include ../../global/jade/variables.jade
-include ../../global/jade/mixins.jade
-include ../jade/variables.jade
-include ../jade/mixins.jade
+include ../../global/pug/variables.pug
+include ../../global/pug/mixins.pug
+include ../pug/variables.pug
+include ../pug/mixins.pug
 
 block page-variables
 
 doctype transitional
 html(xmlns="http://www.w3.org/1999/xhtml")
-  include ../../global/jade/head.jade
+  include ../../global/pug/head.pug
   body
     table(bgcolor="")
       tr
@@ -24,7 +24,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
               td
                 block hero
                   a(
-                    href="#{pageLink}",
+                    href=pageLink
                     target="_blank"
                   )
                     img.full(
@@ -41,11 +41,11 @@ html(xmlns="http://www.w3.org/1999/xhtml")
               td
                 table
                   tr
-                    th.full-small.column 
+                    th.full-small.column
                       h2 Column 1
-                    th.full-small.column 
+                    th.full-small.column
                       h2 Column 2
-                    th.full-small.column 
+                    th.full-small.column
                       h2 Column 3
             tr
               td

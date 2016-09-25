@@ -11,7 +11,7 @@ head
   </o:OfficeDocumentSettings>
   </xml>
   <![endif]-->
-  title #{title}
+  title= title
   meta(charset="UTF-8")
   meta(
     content="IE=edge"
@@ -26,23 +26,23 @@ head
     name="format-detection"
   )
   link(
-    href="#{globalAssetUrl}css/styles.css"
+    href=globalAssetUrl + "css/styles.css"
     rel="stylesheet"
     type="text/css"
   )
   link(
-    href="#{templateAssetUrl}postcss/processed-styles.css"
+    href=templateAssetUrl + "postcss/processed-styles.css"
     rel="stylesheet"
     type="text/css"
   )
   link(
-    href="#{globalAssetUrl}css/styles-embedded.css"
+    href=globalAssetUrl + "css/styles-embedded.css"
     inline
     rel="stylesheet"
     type="text/css"
   )
   link(
-    href="#{templateAssetUrl}postcss/processed-styles-embedded.css"
+    href=templateAssetUrl + "postcss/processed-styles-embedded.css"
     inline
     rel="stylesheet"
     type="text/css"

@@ -1,6 +1,6 @@
 Stamp Header
 
-[https://github.com/mimoduo/Stamp]STAMP HEADLINE
+[https://github.com/mimoduo/Stamp] STAMP HEADLINE
 Stamp Content
 
 COLUMN 1

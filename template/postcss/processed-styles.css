@@ -43,10 +43,6 @@ p {
 
 a {}
 
-a:hover {}
-
-  a span {}
-
 
 /* ================
   Buttons
@@ -54,6 +50,8 @@ a:hover {}
 
 .button {}
 
+  .button-link {}
+    
 
 /* ================
   Colors

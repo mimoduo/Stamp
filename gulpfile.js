@@ -3,7 +3,7 @@
 // ================
 
 var gulp = require('gulp'),
-    jade = require('gulp-jade'),
+    pug = require('gulp-pug'),
     postcss = require('gulp-postcss'),
     inlineCSS = require('gulp-inline-css'),
     inlineSource = require('gulp-inline-source'),
@@ -13,13 +13,13 @@ var gulp = require('gulp'),
 
 
 // ================
-// Jade
+// Pug
 // ================
 
-gulp.task('jade', ['postcss'], function() {
+gulp.task('pug', ['postcss'], function() {
 
-  return gulp.src('./template/pages/**/*.jade')
-    .pipe(jade({
+  return gulp.src('./template/pages/**/*.pug')
+    .pipe(pug({
       pretty: true
     }))
     .pipe(inlineSource())
@@ -67,9 +67,9 @@ gulp.task('postcss', function() {
 
 gulp.task('watch', function() {
 
-  gulp.watch('template/jade/*.jade', ['jade']);
-  gulp.watch('template/pages/**/*.jade', ['jade']);
-  gulp.watch('template/postcss/*.css', ['jade']);
+  gulp.watch('template/pug/*.pug', ['pug']);
+  gulp.watch('template/pages/**/*.pug', ['pug']);
+  gulp.watch('template/postcss/*.css', ['pug']);
 
 });
 
@@ -78,4 +78,4 @@ gulp.task('watch', function() {
 // Default 'gulp' task
 // ================
 
-gulp.task('default', ['jade', 'watch']);
+gulp.task('default', ['pug', 'watch']);

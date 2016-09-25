@@ -11,12 +11,12 @@
     "gulp": "^3.9.1",
     "gulp-html2txt": "^1.2.0",
     "gulp-inline-css": "^3.1.0",
-    "gulp-inline-source": "^2.1.0",
-    "gulp-jade": "^1.1.0",
+    "gulp-inline-source": "^3.0.0",
     "gulp-postcss": "^6.1.1",
-    "gulp-prettify": "^0.4.0",
+    "gulp-prettify": "^0.5.0",
+    "gulp-pug": "^3.0.4",
     "gulp-rename": "^1.2.2",
     "postcss-nested": "^1.0.0",
-    "postcss-simple-vars": "^1.2.0"
+    "postcss-simple-vars": "^3.0.0"
   }
 }
