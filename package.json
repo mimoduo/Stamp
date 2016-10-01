@@ -1,8 +1,9 @@
 {
   "name": "Stamp",
   "version": "0.2.0",
+  "homepage": "https://github.com/mimoduo/Stamp",
   "description": "A small library for building emails",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/mimoduo/Stamp.git"
