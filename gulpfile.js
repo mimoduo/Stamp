@@ -1,6 +1,6 @@
-// ================
+/* ================
 // Required plugins
-// ================
+// ============= */
 
 var gulp = require('gulp'),
     pug = require('gulp-pug'),
@@ -9,16 +9,16 @@ var gulp = require('gulp'),
     inlineSource = require('gulp-inline-source'),
     prettify = require('gulp-prettify'),
     html2txt = require('gulp-html2txt'),
-    rename = require('gulp-rename');
+    imagemin = require('gulp-imagemin');
 
 
-// ================
-// Pug
-// ================
+/* ================
+// Compile Pug
+// ============= */
 
 gulp.task('pug', ['postcss'], function() {
 
-  return gulp.src('./template/pages/**/*.pug')
+  return gulp.src('src/pug/pages/**/*.pug')
     .pipe(pug({
       pretty: true
     }))
@@ -29,53 +29,60 @@ gulp.task('pug', ['postcss'], function() {
     .pipe(prettify({
       indent_size: 2
     }))
-    .pipe(gulp.dest('./template/pages'))
+    .pipe(gulp.dest('dist'))
     .pipe(html2txt({
       ignoreImage: true,
       wordwrap: 75
     }))
-    .pipe(gulp.dest('./template/pages'));
+    .pipe(gulp.dest('dist'));
 
 });
 
 
-// ================
-// Postcss
-// ================
+/* ================
+// Process Postcss
+// ============= */
 
 gulp.task('postcss', function() {
 
-  return gulp.src([
-    './template/postcss/styles.css',
-    './template/postcss/styles-embedded.css'
-  ])
+  return gulp.src(['src/postcss/*.css'])
     .pipe(postcss([
       require('postcss-simple-vars'),
       require('postcss-nested')
     ]))
-    .pipe(rename({
-      prefix: 'processed-'
-    }))
-    .pipe(gulp.dest('./template/postcss'));
+    .pipe(gulp.dest('src/css'));
 
 });
 
 
-// ================
-// Create Watch Task
-// ================
+/* ================
+// Optimize Images
+// ============= */
+
+gulp.task('images', function() {
+
+  return gulp.src('src/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/images'));
+
+});
+
+
+/* ================
+// Watch Task
+// ============= */
 
 gulp.task('watch', function() {
 
-  gulp.watch('template/pug/*.pug', ['pug']);
-  gulp.watch('template/pages/**/*.pug', ['pug']);
-  gulp.watch('template/postcss/*.css', ['pug']);
+  gulp.watch('src/pug/**/*.pug', ['pug']);
+  gulp.watch('src/postcss/*.css', ['pug']);
+  gulp.watch('src/images/*', ['images']);
 
 });
 
 
-// ================
-// Default 'gulp' task
-// ================
+/* ================
+// Default Gulp Task
+// ============= */
 
-gulp.task('default', ['pug', 'watch']);
+gulp.task('default', ['pug', 'images', 'watch']);

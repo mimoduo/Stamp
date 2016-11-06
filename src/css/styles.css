@@ -85,24 +85,6 @@ strong {
   font-weight: bold;
 }
 
-/* Type Tools */
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.no-underline {
-  text-decoration: none;
-}
-
 
 /* ================
   Display Tool

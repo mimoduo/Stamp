@@ -1,8 +1,8 @@
 {
   "name": "Stamp",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "https://github.com/mimoduo/Stamp",
-  "description": "A small library for building emails",
+  "description": "Stamp is an email template workflow",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -11,12 +11,12 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-html2txt": "^1.2.0",
+    "gulp-imagemin": "^3.1.1",
     "gulp-inline-css": "^3.1.0",
     "gulp-inline-source": "^3.0.0",
     "gulp-postcss": "^6.1.1",
     "gulp-prettify": "^0.5.0",
-    "gulp-pug": "^3.0.4",
-    "gulp-rename": "^1.2.2",
+    "gulp-pug": "^3.1.0",
     "postcss-nested": "^1.0.0",
     "postcss-simple-vars": "^3.0.0"
   }

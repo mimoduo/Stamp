@@ -1,17 +1,10 @@
-//- ================
-//- Template Level
-//- ================
-
-include ../../global/pug/variables.pug
-include ../../global/pug/mixins.pug
-include ../pug/variables.pug
 include ../pug/mixins.pug
 
 block page-variables
 
 doctype transitional
 html(xmlns="http://www.w3.org/1999/xhtml")
-  include ../../global/pug/head.pug
+  include head.pug
   body
     table(bgcolor="")
       tr
@@ -29,7 +22,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
                   )
                     img.full(
                       alt="Hero"
-                      src="../../images/hero.jpg"
+                      src="images/hero.jpg"
                     )
             tr
               td
