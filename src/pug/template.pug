@@ -6,26 +6,32 @@ doctype transitional
 html(xmlns="http://www.w3.org/1999/xhtml")
   include head.pug
   body
-    table(bgcolor="")
+    table(
+      bgcolor="#000"
+      cellpadding="0"
+      cellspacing="0"
+    )
       tr
         td
-          table.compartment(align="center")
+          table.compartment(
+            align="center"
+            bgcolor="#fff"
+            cellpadding="0"
+            cellspacing="0"
+          )
             tr
               td
-                p Stamp Header
-            tr
-              td
-                block hero
+                block logo
                   a(
                     href=pageLink
                     target="_blank"
                   )
                     img.full(
-                      alt="Hero"
-                      src="images/hero.jpg"
+                      alt="Logo"
+                      src="images/logo.jpg"
                     )
             tr
-              td
+              td.column
                 block headline
                   h1 Stamp Headline
                 block content
@@ -41,5 +47,6 @@ html(xmlns="http://www.w3.org/1999/xhtml")
                     th.full-small.column
                       h2 Column 3
             tr
-              td
+              td.column
                 p Stamp Footer
+                +button("base", "Learn More", "180px", "40px", "#000")

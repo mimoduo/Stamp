@@ -1,5 +1,17 @@
-mixin button(link, text)
+mixin button(className, text, width, height, color)
   table
     tr
-      td.button
-        a.button-link(href=link)= text
+      .button(class='button-' + className)
+        <!--[if mso]>
+        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:#{height};v-text-anchor:middle;width:#{width};" stroke="f" fillcolor="#{color}">
+          <w:anchorlock/>
+          <center>
+        <![endif]-->
+        a.button-link(
+          class='button-link-' + className
+          href="#"
+        )= text
+        <!--[if mso]>
+          </center>
+        </v:rect>
+        <![endif]-->

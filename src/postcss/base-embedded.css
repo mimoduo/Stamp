@@ -1,0 +1,59 @@
+/* ================
+  All Screens
+================ */
+
+/* Correct alignment and incomplete background colors */
+
+ReadMsgBody,
+.ExternalClass {
+  width: 100%;
+}
+
+/* Prevent link appearance on data-like content */
+
+a[x-apple-data-detectors] {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+
+/* ================
+  Small Screens
+================ */
+
+@media only screen and (max-width: 620px) {
+
+  /* Column Tools */
+
+  .compartment {
+    width: 300px !important;
+  }
+
+  .full-small {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .column {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  /* Display Tools */
+
+  .show-small {
+    display: block !important;
+    overflow: visible !important;
+    max-height: initial !important;
+  }
+
+  .hide-small {
+    display: none !important;
+    overflow: hidden !important;
+    max-height: 0 !important;
+  }
+}

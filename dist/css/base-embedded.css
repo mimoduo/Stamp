@@ -29,6 +29,10 @@ a[x-apple-data-detectors] {
 
   /* Column Tools */
 
+  .compartment {
+    width: 300px !important;
+  }
+
   .full-small {
     display: block !important;
     width: 100% !important;
@@ -48,9 +52,8 @@ a[x-apple-data-detectors] {
   }
 
   .hide-small {
-    display: none;
-    overflow: hidden;
-    max-height: 0;
+    display: none !important;
+    overflow: hidden !important;
+    max-height: 0 !important;
   }
-
 }

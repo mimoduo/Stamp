@@ -8,19 +8,6 @@ td {
 
 
 /* ================
-  Columns
-================ */
-
-.compartment {
-  width: 600px;
-}
-
-.column {
-  padding: 0 10px;
-}
-
-
-/* ================
   Typography
 ================ */
 
@@ -51,16 +38,3 @@ a {}
 .button {}
 
   .button-link {}
-    
-
-/* ================
-  Colors
-================ */
-
-.bg-white {
-  background: #ffffff;
-}
-
-.white {
-  color: #ffffff;
-}

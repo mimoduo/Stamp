@@ -1,0 +1,102 @@
+/* ================
+  Body
+================ */
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+/* ================
+  Tables
+================ */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  word-wrap: break-word;
+}
+
+  th {
+    text-align: left;
+  }
+
+  td {
+    padding: 0;
+  }
+
+
+/* ================
+  Columns
+================ */
+
+.compartment {
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.column {
+  padding: 0 10px;
+}
+
+.full {
+  display: block;
+  width: 100%;
+}
+
+.half {
+  width: 50%;
+}
+
+
+/* ================
+  Images
+================ */
+
+/* Image Scaling Quirk */
+/* https://css-tricks.com/ie-fix-bicubic-scaling-for-images/ */
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Image Height Quirk */
+
+img.full {
+  height: auto;
+}
+
+/* Linked Images Quirk */
+
+a img {
+  border-style: none;
+  border-width: 0;
+}
+
+
+/* ================
+  Type
+================ */
+
+/* Enforce strong's default font-weight */
+
+strong {
+  font-weight: bold;
+}
+
+
+/* ================
+  Display Tool
+================ */
+
+.hide-large {
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+}

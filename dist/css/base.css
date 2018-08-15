@@ -3,9 +3,9 @@
 ================ */
 
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -36,8 +36,13 @@ table {
 ================ */
 
 .compartment {
+  width: 600px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.column {
+  padding: 0 10px;
 }
 
 .full {
